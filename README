@@ -1,7 +1,5 @@
 This supplementary material contains the follow files:
 
-Appendix.pdf: the appendix of the paper.
-
 NSS_reddit_asoiaf.pkl: Nucleus size series(NSS) of 500 2700-word sequences from the reddit-asoiaf dataset. The data contains 500 rows; each row is a NSS with length 2700.
 
 NSS_reddit_electronic_cigarette.pkl: NSS of 500 2700-word sequences from the reddit-electronic-cigarette dataset. Same format as NSS_reddit_asoiaf.pkl.
