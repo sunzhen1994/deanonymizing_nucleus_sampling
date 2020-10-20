@@ -26,8 +26,8 @@ mitigation.diff: contains our migitigation code, given as a ``git diff'' from Hu
 
 ====
 git clone https://github.com/huggingface/transformers.git
-git checkout a615499076a67dceb8907ecdf8eadaff04bb8d6a
 cd transformers
+git checkout a615499076a67dceb8907ecdf8eadaff04bb8d6a
 git apply <path-to-mitigations.diff>
 ====
 
