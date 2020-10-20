@@ -19,3 +19,15 @@ silkroad_NSS_vs_trace.pkl: (user, NSS, trace) tuples of 41 silkroad users. The d
 All data files are in '.pkl' format. Please use the Python pickle module to load the data.
 
 plot_silkroad.py: A Python script shows how to match NSSes against traces using the above silkroad data. Results are plotted in a confusion matrix of NSS vs. trace. To run the script: "python3 plot_silkroad.py".
+
+
+
+mitigation.diff: contains out migitigation code, given as a ``git diff'' from Hugging Face Transformers repository code, at commit a615499076a. To apply this patch, perform:
+
+====
+git clone https://github.com/huggingface/transformers.git
+git checkout a615499076a67dceb8907ecdf8eadaff04bb8d6a
+cd transformers
+git apply <path-to-mitigations.diff>
+====
+
