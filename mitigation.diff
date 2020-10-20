@@ -1,0 +1,14 @@
+diff --git a/examples/run_generation.py b/examples/run_generation.py
+index a2a8f291..63f51124 100644
+--- a/examples/run_generation.py
++++ b/examples/run_generation.py
+@@ -98,8 +98,7 @@ def top_k_top_p_filtering(logits, top_k=0, top_p=0.0, filter_value=-float('Inf')
+         sorted_indices_to_remove[..., 1:] = sorted_indices_to_remove[..., :-1].clone()
+         sorted_indices_to_remove[..., 0] = 0
+ 
+-        indices_to_remove = sorted_indices[sorted_indices_to_remove]
+-        logits[indices_to_remove] = filter_value
++        logits[sorted_indices] = logits[sorted_indices] - sorted_indices_to_remove * torch.finfo(torch.float).max * 2
+     return logits
+ 
+ 

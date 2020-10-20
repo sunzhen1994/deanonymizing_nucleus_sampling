@@ -1,0 +1,23 @@
+This supplementary material contains the follow files:
+
+Appendix.pdf: the appendix of the paper.
+
+NSS_reddit_asoiaf.pkl: Nucleus size series(NSS) of 500 2700-word sequences from the reddit-asoiaf dataset. The data contains 500 rows; each row is a NSS with length 2700.
+
+NSS_reddit_electronic_cigarette.pkl: NSS of 500 2700-word sequences from the reddit-electronic-cigarette dataset. Same format as NSS_reddit_asoiaf.pkl.
+
+NSS_reddit_india.pkl: NSS of 500 2700-word sequences from the reddit-india dataset. Same format as NSS_reddit_asoiaf.pkl.
+
+NSS_reddit_OkCupid.pkl: NSS of 500 2700-word sequences from the reddit-OkCupid dataset. Same format as NSS_reddit_asoiaf.pkl.
+
+NSS_reddit_Random_Acts_Of_Amazon.pkl: NSS of 500 2700-word sequences from the reddit-Random-Acts-Of-Amazon dataset. Same format as NSS_reddit_asoiaf.pkl.
+
+NSS_reddit_sports.pkl: NSS of 4000 2700-word sequences from the reddit-sports dataset. The data contains 4000 rows; each row is a NSS with length 2700.
+
+NSS_vs_trace.pkl: 1473 (NSS, trace) paris from the reddit-sports dataset. Traces are processed to remove noise and outliers. The data contains 1473 rows; each row is a (NSS, trace) pair.
+
+silkroad_NSS_vs_trace.pkl: (user, NSS, trace) tuples of 41 silkroad users. The data contains 41 rows; each row is a (user, NSS, trace) tuple.
+
+All data files are in '.pkl' format. Please use the Python pickle module to load the data.
+
+plot_silkroad.py: A Python script shows how to match NSSes against traces using the above silkroad data. Results are plotted in a confusion matrix of NSS vs. trace. To run the script: "python3 plot_silkroad.py".
