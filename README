@@ -22,7 +22,7 @@ plot_silkroad.py: A Python script shows how to match NSSes against traces using 
 
 
 
-mitigation.diff: contains out migitigation code, given as a ``git diff'' from Hugging Face Transformers repository code, at commit a615499076a. To apply this patch, perform:
+mitigation.diff: contains our migitigation code, given as a ``git diff'' from Hugging Face Transformers repository code, at commit a615499076a. To apply this patch, perform:
 
 ====
 git clone https://github.com/huggingface/transformers.git
